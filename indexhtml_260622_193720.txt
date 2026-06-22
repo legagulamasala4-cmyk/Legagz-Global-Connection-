@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Name | Professional Services</title>
+    <!-- Tailwind CSS for modern, clean styling -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome for clean vector icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-blue-600 tracking-tight">COMPANY<span class="text-gray-900">LOGO</span></a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                <a href="#services" class="hover:text-blue-600 transition">Services</a>
+                <a href="#about" class="hover:text-blue-600 transition">About Us</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-600 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-3 space-y-3 shadow-inner">
+            <a href="#home" class="block hover:text-blue-600 transition">Home</a>
+            <a href="#services" class="block hover:text-blue-600 transition">Services</a>
+            <a href="#about" class="block hover:text-blue-600 transition">About Us</a>
+            <a href="#contact" class="block hover:text-blue-600 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">Smart Solutions to Grow Your Business</h1>
+            <p class="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">We provide professional, reliable, and scalable services tailored to help your company succeed in today's competitive market.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3 rounded-lg shadow-md transition text-center">Get Started</a>
+                <a href="#services" class="bg-transparent border border-white/40 hover:border-white text-white font-semibold px-8 py-3 rounded-lg transition text-center">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">What We Do Best</h2>
+            <p class="text-gray-600 max-w-xl mx-auto">High-quality solutions designed to handle the heavy lifting while you focus on scaling your core operations.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-white p-8 rounded-xl shadow-xs border border-gray-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 text-xl">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">Business Services</h3>
+                <p class="text-gray-600 leading-relaxed">Streamlined administrative setup, operational assistance, and professional consulting to keep things compliant and organized.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-white p-8 rounded-xl shadow-xs border border-gray-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 text-xl">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">Tech & Connection</h3>
+                <p class="text-gray-600 leading-relaxed">Reliable digital distribution, telecom setup, and hardware reselling to ensure your infrastructure is fast and modern.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-white p-8 rounded-xl shadow-xs border border-gray-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 text-xl">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900">Growth Strategy</h3>
+                <p class="text-gray-600 leading-relaxed">Smart marketing frameworks, digital automation toolkits, and procurement setups engineered to scale your revenue paths.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white py-20 px-4 border-t border-b border-gray-100">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-blue-600 font-semibold tracking-wider uppercase text-sm">About Our Team</span>
+                <h2 class="text-3xl font-bold text-gray-900 mt-2 mb-6">Built on Trust, Delivered with Excellence</h2>
+                <p class="text-gray-600 leading-relaxed mb-4">We bridge the gap between complex operational demands and simple, accessible execution. Whether it is sourcing technology, handling critical registrations, or optimizing workflows, we treat your business goals as our own.</p>
+                <p class="text-gray-600 leading-relaxed">Our mission is straightforward: to eliminate technical friction and build professional infrastructure that allows local enterprises to confidently thrive.</p>
+            </div>
+            <div class="bg-gray-100 h-64 md:h-80 rounded-2xl flex items-center justify-center border border-gray-200 shadow-inner">
+                <i class="fa-solid fa-briefcase text-6xl text-gray-300"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 max-w-xl mx-auto">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-gray-900 mb-3">Let's Work Together</h2>
+            <p class="text-gray-600">Have a question or ready to kick off a project? Send us a message.</p>
+        </div>
+
+        <form class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 space-y-6" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+            <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Company or Full Name</label>
+                <input type="text" required class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition bg-gray-50/50">
+            </div>
+            <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Email Address</label>
+                <input type="email" required class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition bg-gray-50/50">
+            </div>
+            <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">How Can We Help?</label>
+                <textarea rows="4" required class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition bg-gray-50/50"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 rounded-lg shadow-md transition">
+                Submit Inquiry
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 text-center text-sm border-t border-gray-800">
+        <p class="mb-4">&copy; 2026 Company Name. All Rights Reserved.</p>
+        <div class="flex justify-center space-x-6 text-base">
+            <a href="#" class="hover:text-white transition"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="hover:text-white transition"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <!-- Simple Menu JavaScript Interaction -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+        
+        // Close menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => menu.classList.add('hidden'));
+        });
+    </script>
+</body>
+</html>
